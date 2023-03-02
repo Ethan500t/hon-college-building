@@ -4,7 +4,7 @@ import { PageProps } from "../Page";
 import { useState } from "react";
 
 export function FloorPage(){
-    const navButtonClasses = "text-black bg-gray-400 hover:bg-gray-500 focus:ring-4 focus:ring-gray-900 font-medium text-sm px-5 py-2.5 mb-2 w-full"
+    const navButtonClasses = "text-black bg-gray-200 hover:bg-gray-400 font-medium text-sm px-5 py-2.5 w-full rounded-xl"
 
     const [currentFloor, setCurrentFloor] = useState("floorOne");
 
@@ -17,8 +17,8 @@ export function FloorPage(){
                 </svg>
             </button>
             <div className="grid grid-cols-12">
-                <aside id="default-sidebar" className="inline col-span-2 top-0  z-40 bg-yellow-200" aria-label="Sidebar">
-                <div className="h-full px-3 py-4 overflow-y-none bg-gray-100 dark:bg-gray-800">
+                <aside id="default-sidebar" className="inline col-span-2 top-0 p-4  z-40 bg-gray-100" aria-label="Sidebar">
+                <div className="min-h-[calc(100vh-4rem)]  overflow-y-hidden bg-gray-100 ">
                     <ul className="space-y-2">
                         <li>
                         <button onClick={() => setCurrentFloor("floorOne")} className={navButtonClasses}> Floor 1 </button>
