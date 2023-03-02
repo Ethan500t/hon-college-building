@@ -24,6 +24,8 @@ function App() {
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <button onClick={() => setCurrentPage("overview")} className={navButtonClasses}> Overwiew </button>
             <button onClick={() => setCurrentPage("floorPage")} className={navButtonClasses}> Floors </button>
+            <button onClick={() => setCurrentPage("leed")} className={navButtonClasses}> LEED </button>
+            <button onClick={() => setCurrentPage("otherStuff")} className={navButtonClasses}> Not Sure Yet </button>
               
           </div>
         </div>

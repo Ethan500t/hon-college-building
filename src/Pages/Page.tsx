@@ -1,5 +1,7 @@
 import { Overview } from "./Overview";
 import { FloorPage } from "./floors/FloorPage";
+import { OtherStuff } from "./OtherStuff";
+import { Leed } from "./Leed";
 
 export declare interface PageProps{
     pageName?: string;
@@ -16,6 +18,12 @@ export function Page({pageName, className}: PageProps, ...props: any){
             break;
         case "floorPage": 
             currentPage = <FloorPage/>;
+            break;
+        case "leed":
+            currentPage = <Leed/>;
+            break;
+        case "otherStuff": 
+            currentPage = <OtherStuff/>;
             break;
 
     }
