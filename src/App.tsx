@@ -12,8 +12,6 @@ function App() {
   return (
     <>
 
-      
-
       <nav className="h-16 border-gray-200 px-2 sm:px-4 py-2.5 bg-green-800">
         <div className="container flex flex-wrap items-center justify-between mx-auto ">
           <USFLogo className="h-8 mx-2"/>
@@ -32,10 +30,6 @@ function App() {
       </nav>
       
       <Page pageName={currentPage} className={""}/>
-
-
-      
-
       
     </>
   )
