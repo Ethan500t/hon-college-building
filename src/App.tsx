@@ -7,7 +7,7 @@ function App() {
 
   const [currentPage, setCurrentPage] = useState("overview");
 
-  const navButtonClasses = "text-white bg-green-800 hover:bg-green-900  font-medium text-sm px-5 py-2.5 mr-2 h-full"
+  const navButtonClasses = "text-white rounded-lg bg-green-800 hover:bg-green-900  font-medium text-sm px-5 py-2.5 mr-2 h-full"
 
   return (
     <>
