@@ -14,7 +14,7 @@ export function Leed({pageName, className}: PageProps, ...props: any) {
                 <div className="col-span-1"></div>
                 <div className={"col-span-10 " + GeneralBox}>
                     <h2 className="text-xl p-2">Intro to Sustainability</h2>
-                    <p>
+                    <p className="text-lg p-2">
                     Sustainability is a major priority at USF. We strive for every building to be eco-friendly, for the health of our 
                     environment and students. A sustainable building is defined as a building that maintains or improves the quality 
                     of life for those using it, while preserving and incorporating the environment around it. The Judy Genshaft Honors 
@@ -29,7 +29,7 @@ export function Leed({pageName, className}: PageProps, ...props: any) {
                 <div className="col-span-1"></div>
                 <div className={"col-span-8 " + GeneralBox}>
                     <h2 className="text-xl p-2">What is LEED?</h2>
-                    <p>
+                    <p className="text-lg p-2">
                     LEED, or Leadership in Energy and Environmental Design, is a set of standards that sets guidelines for sustainable, 
                     cost-efficient, and safe buildings across the world, of all varieties, from commercial to residential. The new Judy 
                     Genshaft Honors College building has been created to meet as many of these guidelines as possible, attaining a Silver 
