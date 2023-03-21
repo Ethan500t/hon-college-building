@@ -3,7 +3,7 @@ import leedImg from "../assets/leed.png"
 
 export function Leed({pageName, className}: PageProps, ...props: any) {
 
-    let GeneralBox = "m-4 p-4 bg-gray-200 rounded-lg"
+    let GeneralBox = "m-4 p-4 bg-gray-200 rounded-lg";
 
     return (
         <div className={className}>
