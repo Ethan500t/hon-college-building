@@ -21,9 +21,9 @@ function App() {
           </button>
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <button onClick={() => setCurrentPage("overview")} className={navButtonClasses}> Overview </button>
-            <button onClick={() => setCurrentPage("floorPage")} className={navButtonClasses}> Floors </button>
+            <button onClick={() => setCurrentPage("floors")} className={navButtonClasses}> Floors </button>
             <button onClick={() => setCurrentPage("leed")} className={navButtonClasses}> LEED </button>
-            <button onClick={() => setCurrentPage("otherStuff")} className={navButtonClasses}> Not Sure Yet </button>
+            <button onClick={() => setCurrentPage("landscaping")} className={navButtonClasses}> Landscaping </button>
               
           </div>
         </div>

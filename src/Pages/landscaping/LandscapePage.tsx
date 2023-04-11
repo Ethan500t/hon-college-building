@@ -1,9 +1,9 @@
 
-import { FloorOne, FloorTwo, FloorThree, FloorFour, FloorFive } from "./"
+import { FloridaFlameMaple, DuraHeatRiverBirch, RedBottlebrush, FloorFour, FloorFive } from "."
 import { PageProps } from "../Page";
 import { useState } from "react";
 
-export function FloorPage(){
+export function LandscapePage(){
     const navButtonClasses = "text-black bg-gray-200 hover:bg-gray-400 font-medium text-sm px-5 py-2.5 w-full rounded-xl";
     const navButtonDropDownClasses = "text-black bg-gray-200 hover:bg-gray-400 font-medium text-sm px-5 py-2.5 w-full rounded-xl";
 
@@ -18,17 +18,17 @@ export function FloorPage(){
                 </svg>
             </button>
             <div className="grid grid-cols-12">
-                <aside id="default-sidebar" className="col-span-2 top-0 p-4  z-40 bg-gray-100 hidden md:inline" aria-label="Sidebar">
+                <aside id="default-sidebar" className="inline col-span-2 top-0 p-4  z-40 bg-gray-100" aria-label="Sidebar">
                 <div className="min-h-[calc(100vh-4rem)]  overflow-y-hidden bg-gray-100 ">
                     <ul className="space-y-2">
                         <li>
-                        <button onClick={() => setCurrentFloor("floorOne")} className={navButtonClasses}> Floor 1 </button>
+                        <button onClick={() => setCurrentFloor("floridaFlameMaple")} className={navButtonClasses}> Florida Flame Maple </button>
                         </li>
                         <li>
-                        <button onClick={() => setCurrentFloor("floorTwo")} className={navButtonClasses}> Floor 2 </button>
+                        <button onClick={() => setCurrentFloor("duraHeatRiverBirtch")} className={navButtonClasses}> Dura Heat River Birtch </button>
                         </li>
                         <li>
-                        <button onClick={() => setCurrentFloor("floorThree")} className={navButtonClasses}> Floor 3 </button>
+                        <button onClick={() => setCurrentFloor("redBottlebrush")} className={navButtonClasses}> Red Bottlebrush </button>
                         </li>
                         <li>
                         <button onClick={() => setCurrentFloor("floorFour")} className={navButtonClasses}> Floor 4 </button>
@@ -54,14 +54,14 @@ function FloorSelect({pageName, className}: PageProps, ...props: any){
     let currentPage: JSX.Element = <></>;
 
     switch(pageName){
-        case "floorOne": 
-            currentPage = <FloorOne className={className}/>;
+        case "floridaFlameMaple": 
+            currentPage = <FloridaFlameMaple className={className}/>;
             break;
-        case "floorTwo": 
-            currentPage = <FloorTwo className={className}/>;
+        case "duraHeatRiverBirtch": 
+            currentPage = <DuraHeatRiverBirch className={className}/>;
             break;
-        case "floorThree": 
-            currentPage = <FloorThree className={className}/>;
+        case "redBottlebrush": 
+            currentPage = <RedBottlebrush className={className}/>;
             break;
         case "floorFour": 
             currentPage = <FloorFour className={className}/>;

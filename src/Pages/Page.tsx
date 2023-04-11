@@ -1,6 +1,6 @@
 import { Overview } from "./Overview";
 import { FloorPage } from "./floors/FloorPage";
-import { OtherStuff } from "./OtherStuff";
+import { LandscapePage } from "./landscaping/LandscapePage";
 import { Leed } from "./Leed";
 
 export declare interface PageProps{
@@ -16,14 +16,14 @@ export function Page({pageName, className}: PageProps, ...props: any){
         case "overview": 
             currentPage = <Overview className={className}/>;
             break;
-        case "floorPage": 
+        case "floors": 
             currentPage = <FloorPage/>;
             break;
         case "leed":
             currentPage = <Leed/>;
             break;
-        case "otherStuff": 
-            currentPage = <OtherStuff/>;
+        case "landscaping": 
+            currentPage = <LandscapePage/>;
             break;
 
     }

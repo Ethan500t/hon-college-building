@@ -11,7 +11,7 @@ export function Overview({pageName, className}: PageProps, ...props: any) {
             <div>test</div>
             <div>test</div>
             <div>test</div>
-            <div>test</div>2
+            <div>test</div>
             
             
         </div>
